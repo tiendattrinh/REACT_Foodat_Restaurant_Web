@@ -1,0 +1,32 @@
+//-----------------About
+.section-about {
+
+    height: 400px;
+    background-color: white;
+    //background-color: rgb(253, 253, 185);
+
+    .section-about-content {
+        height: 500px !important;
+        display: flex;
+        width: 100%;
+        gap: 30px;
+
+        .content-left {
+            margin: 0 60px;
+
+        }
+
+        .content-right {
+            padding-top: 25px;
+            width: 40%;
+            text-align: justify;
+        }
+    }
+
+    .section-about-header {
+        margin: 0 50px;
+        padding: 0 10px;
+        font-size: 30px;
+        font-weight: 600px;
+    }
+}

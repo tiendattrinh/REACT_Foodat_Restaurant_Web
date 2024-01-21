@@ -1,0 +1,123 @@
+.container-news {
+    padding-top: 40px;
+    background-color: white;
+    margin: 0 !important;
+}
+
+.edit-link {
+    i {
+        font-size: 12px;
+        //color: black;
+    }
+}
+
+.page-news {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 1200px; // Điều chỉnh kích thước tối đa của trang theo ý muốn
+    padding: 20px; // Tạo khoảng trắng xung quanh nội dung
+}
+
+.edit-img {
+    text-align: center;
+    height: 80%;
+}
+
+.edit-img-texas {
+    display: flex;
+
+    .left {
+        width: 50%;
+        height: 350px;
+        overflow: hidden;
+        padding-right: 30px;
+        /* Ẩn phần dư */
+    }
+
+    .right {
+        width: 50%;
+        height: 350px;
+
+    }
+}
+
+.second-page {
+    background-color: white; // Màu nền cho phần second-page
+    padding: 20px;
+}
+
+.over-page {
+    background-color: white;
+    // background-color: rgb(249, 249, 226); // Màu nền cho phần over-page
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Hiệu ứng bóng đổ
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .banner {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-page {
+        max-width: 60%; // Điều chỉnh kích thước của phần text
+        padding-left: 20px; // Tạo khoảng cách với phần banner
+        box-sizing: border-box;
+        text-align: justify;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+    }
+}
+
+.body {
+    margin-top: 20px;
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    div {
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.cre {
+    text-align: right;
+    margin-top: 20px;
+    color: #999;
+}

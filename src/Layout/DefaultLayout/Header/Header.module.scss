@@ -1,0 +1,208 @@
+.home-header-container {
+    height: 60px;
+    width: 100%;
+    position: fixed !important; //giup menu dung yen tren top
+    top: 0;
+    z-index: 10000;
+    //border: 1px solid rgb(121, 119, 119);
+
+    .home-header-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding: 0 20px;
+        background: white;
+
+        .left-content {
+            width: 20%;
+            padding-left: 30px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+
+            .header-logo {
+                background-image: url('src/assets/logofoodat.png');
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                padding-left: 100px;
+                background-size: contain; //logo khong bi keo to, hien thi full logo
+
+            }
+        }
+
+        .center-content {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 17px;
+            padding: 0 35px;
+
+            //=======page btn nha hang
+            .dropdown {
+                display: inline-block;
+                position: relative;
+                //color: lightgoldenrodyellow;
+
+                button {
+                    background-color: white;
+                    color: black;
+                    padding: 5px 0;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #ff8243;
+                    }
+                }
+
+                .content {
+                    border-radius: 5px;
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    min-width: 115px;
+                    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+                    z-index: 1; // Để menu xuất hiện trên các phần tử khác
+                }
+
+                &:hover .content {
+                    display: block;
+                }
+
+                &:hover button {
+                    background-color: white;
+                }
+
+                a {
+                    display: block;
+                    color: black;
+                    text-decoration: none;
+                    padding: 10px 15px;
+
+                    &:hover {
+                        border-radius: 5px;
+                        background-color: #f9ad87;
+                        // background-color: hsl(0, 0%, 90%);
+                    }
+                }
+            }
+
+            //=======gape_end
+
+            .child-content {
+                a {
+                    text-decoration: none; // Bỏ gạch chân cho nội dung in đậm
+                    color: black;
+
+                    &:hover {
+                        color: #ff8243;
+                    }
+
+                }
+
+                b {
+                    color: black;
+
+                    &:hover {
+                        color: #ff8243;
+                    }
+
+                }
+            }
+        }
+
+        .right-content {
+            width: 35%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+
+            .search-btn {
+                .header-search-form {
+                    position: relative;
+                    display: flex;
+
+                    .form-input {
+                        width: 100%;
+                        height: 40px;
+                        outline: none !important;
+                        padding: 10px 15px;
+                        color: #0d0d25;
+                        -webkit-appearance: none;
+                        border-radius: 10px;
+                        border: none;
+                        background: white;
+                        box-shadow: inset 6px 6px 8px #dadada, inset -6px -6px 8px #ffffff;
+                    }
+
+                    .button-search {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #ff8243;
+                        }
+                    }
+                }
+            }
+
+            .btn-cart {
+                width: 40px;
+                height: 40px;
+                display: inline-flex;
+                justify-content: center;
+                border-radius: 10px;
+                position: relative;
+                margin-left: 20px;
+                transition: 0.3s;
+                box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff;
+                align-items: center;
+
+                a {
+                    i {
+                        color: black;
+                    }
+
+                    &:hover i {
+                        color: #ff8243; // Màu xanh khi hover
+                    }
+                }
+
+                .cart-number {
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    width: 22px;
+                    height: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    font-size: 12px;
+                    border: 1px solid #bfbfbf;
+                    color: #ff8243;
+                }
+            }
+
+            .bnt-sign-up {
+                display: flex;
+
+                p {
+                    padding-top: 15px;
+                }
+
+                i {
+                    &:hover {
+                        color: #ff8243;
+                    }
+                }
+            }
+        }
+    }
+}

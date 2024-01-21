@@ -1,0 +1,35 @@
+.login-background {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1)0%, rgba(253, 187, 45, 1)100%);
+
+    .login-container {
+        width: 350px;
+        border-radius: 10px;
+        background-color: white;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 400px;
+        margin-top: 110px;
+
+        .text-login {
+            text-align: center;
+            font-weight: 600;
+            font-size: 26px;
+            padding-top: 10px;
+        }
+
+        .edit-text-login {
+            color: blue;
+            padding-top: 10px;
+        }
+
+        .edit-signupp {
+            background: rgb(214, 215, 216) !important;
+
+        }
+    }
+}

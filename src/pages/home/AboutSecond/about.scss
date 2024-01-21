@@ -1,0 +1,111 @@
+// styles.scss
+
+#about {
+    .section-about {
+        display: flex;
+        justify-content: center;
+        background-color: white; // Màu nền của section
+
+        .section-content {
+            display: flex;
+            max-width: 1200px; // Độ rộng tối đa của nội dung
+            width: 100%;
+            margin: 0 auto; // Căn giữa nội dung
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .content-left {
+                flex: 1;
+                padding: 80px; // Khoảng cách với phần phải
+
+                @media (max-width: 768px) {
+                    padding: 20px;
+                }
+
+                h2 {
+                    font-size: 24px; // Kích thước phông chữ cho tiêu đề
+                    margin-bottom: 20px; // Khoảng cách với đoạn văn bản
+                }
+
+                p {
+                    margin-bottom: 15px; // Khoảng cách giữa các đoạn văn bản
+                }
+            }
+
+            .content-right {
+                flex: 1;
+                padding-top: 30px;
+
+                .right-image {
+                    img {
+                        width: 400px; // Ảnh nằm bên phải căn đều và co dãn
+                        height: 350px;
+                        display: block;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    margin-top: 20px; // Khoảng cách với phần trên (đoạn văn bản)
+                }
+            }
+        }
+    }
+
+
+}
+
+#about {
+    .section-about-down {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        //padding-top: 10px;
+        background-color: white; // Màu nền của section
+
+        .section-content-down {
+            display: flex;
+            max-width: 1200px; // Độ rộng tối đa của nội dung
+            width: 100%;
+            margin: 0 auto; // Căn giữa nội dung
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .content-image-down {
+                padding-left: 40px;
+
+                img {
+                    width: 400px; // Ảnh nằm bên trên căn đều và co dãn
+                    height: 370px;
+                    display: block;
+                }
+
+                @media (max-width: 768px) {
+                    margin-bottom: 20px; // Khoảng cách với phần dưới (đoạn văn bản)
+                }
+            }
+
+            .content-right-down {
+                flex: 1;
+                padding: 50px; // Khoảng cách với phần phải
+                padding-top: 20px;
+
+                @media (max-width: 768px) {
+                    padding: 20px;
+                }
+
+                h2 {
+                    font-size: 24px; // Kích thước phông chữ cho tiêu đề
+                    margin-bottom: 20px; // Khoảng cách với đoạn văn bản
+                }
+
+                p {
+                    margin-bottom: 15px; // Khoảng cách giữa các đoạn văn bản
+                }
+            }
+        }
+    }
+}
